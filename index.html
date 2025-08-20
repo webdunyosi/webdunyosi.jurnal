@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jurnal</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-white shadow-md p-4 flex justify-center items-center">
+      <h1 class="text-blue-600 font-bold text-2xl">Web dunyosi jurnal</h1>
+    </header>
+
+    <!-- Loading Spinner -->
+    <div id="loading" class="flex justify-center items-center h-64">
+      <div
+        class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"
+      ></div>
+    </div>
+
+    <!-- Jurnal table -->
+    <main class="p-6">
+      <table class="border-2" id="products"></table>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
