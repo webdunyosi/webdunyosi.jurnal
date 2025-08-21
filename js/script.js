@@ -21,6 +21,7 @@ async function fetchProducts() {
       const ism = item["Ism familiya"] || "Noma'lum ism"
       const price = item["09/01 (18:00)"] || "-"
       const image = item["09/03 (18:00)"] || "-"
+      const js = item["js"] || "-"
 
       const card = document.createElement("tr")
       card.className = "bg-amber-300"
@@ -30,6 +31,7 @@ async function fetchProducts() {
             <td class="border-2 py-1 px-5 font-bold">${ism}</td>
             <td class="border-2 py-1 px-5">${price}</td>
             <td class="border-2 py-1 px-5">${image}</td>
+            <td class="border-2 py-1 px-5">${js}</td>
           `
 
       productsContainer.appendChild(card)
