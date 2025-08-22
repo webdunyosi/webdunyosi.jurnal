@@ -12,7 +12,7 @@ function renderRows(rows) {
   productsBody.innerHTML = ""
   const fragment = document.createDocumentFragment()
   rows.forEach((item, index) => {
-    const number = item["№"] ?? index + 1
+    const number = index + 1
     const ism = item["Ism familiya"] || "Noma'lum ism"
     const css = item["css"] ?? "-"
     const tailwindcss = item["tailwindcss"] ?? "-"
