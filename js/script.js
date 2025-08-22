@@ -19,9 +19,10 @@ async function fetchProducts() {
     data.forEach((item) => {
       const number = item["№"] || "№"
       const ism = item["Ism familiya"] || "Noma'lum ism"
-      const price = item["09/01 (18:00)"] || "-"
-      const image = item["09/03 (18:00)"] || "-"
+      const css = item["css"] || "-"
+      const tailwindcss = item["tailwindcss"] || "-"
       const js = item["js"] || "-"
+      const backend = item["backend"] || "-"
 
       const card = document.createElement("tr")
       card.className = "bg-amber-300"
@@ -29,9 +30,10 @@ async function fetchProducts() {
       card.innerHTML = `
             <td class="border-2 py-1 px-5 font-bold">${number}</td>
             <td class="border-2 py-1 px-5 font-bold">${ism}</td>
-            <td class="border-2 py-1 px-5">${price}</td>
-            <td class="border-2 py-1 px-5">${image}</td>
+            <td class="border-2 py-1 px-5">${css}</td>
+            <td class="border-2 py-1 px-5">${tailwindcss}</td>
             <td class="border-2 py-1 px-5">${js}</td>
+            <td class="border-2 py-1 px-5">${backend}</td>
           `
 
       productsContainer.appendChild(card)
